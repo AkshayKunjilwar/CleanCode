@@ -1,0 +1,63 @@
+//Review 1
+public bool IsShopOpen(string day)
+{
+    if (string.IsNullOrEmpty(day))
+    {
+        return false;
+    }
+
+    List<string> openDays = new List<string> { "friday", "saturday", "sunday" };
+    return openDays.Contains(day.ToLower());
+}
+
+//Review 2
+public long Fibonacci(int n)
+{
+    if (n < 0)
+    {
+        throw new System.ArgumentException("Input must be non-negative", nameof(n));
+    }
+
+    return (n == 0 || n == 1) ? n : Fibonacci(n - 1) + Fibonacci(n - 2);
+}
+//Review 4
+var l = new[] { "Austin", "New York", "San Francisco" };
+
+for (var i = 0; i < l.Count(); i++)
+{
+    var ListofCities = l[i];
+    DoStuff();
+    DoSomeOtherStuff();
+
+    // ...
+    // ...
+    // ...
+    // Wait, what is `li` for again?
+    Dispatch(ListofCities);
+}
+
+//Review 5
+int UserRole == Console.ReadLine()
+if (userRole == 8) // Check if Admin 
+{
+    
+}
+
+//Review 6
+public class Car
+{
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public string Color { get; set; }
+
+    //...
+}
+//Review 7 
+var YearMonthDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
+
+//Review 9
+public void CreateMicrobrewery(string name)
+{
+    var breweryName = name
+    // ...
+}
